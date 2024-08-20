@@ -1,6 +1,6 @@
 "use client";
 
-import config from "@/lib/Config.json";
+import config from "@/app/Config.json";
 import Image from "next/image";
 
 export const Projects = () => {

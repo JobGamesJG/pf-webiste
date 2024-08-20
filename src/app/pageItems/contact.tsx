@@ -1,6 +1,5 @@
 "use client";
 
-import config from "@/lib/Config.json";
 import React, { useState } from "react";
 
 export const Contact = () => {

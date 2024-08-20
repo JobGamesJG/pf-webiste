@@ -1,7 +1,7 @@
 "use client";
 
 import { getAge } from "@/lib";
-import config from "@/lib/Config.json";
+import config from "@/app/Config.json";
 
 export const About = () => {
     return (
