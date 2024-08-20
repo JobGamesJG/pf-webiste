@@ -22,6 +22,8 @@ export default function RootLayout({
         <>
             <Script src="darkmode.js" />
             <Script src="sectionManager.js" />
+            <Script src="https://kit.fontawesome.com/f86b390e31.js" crossOrigin="anonymous" />
+
             <html lang="en">
                 <body className={inter.className + " dark"}>
                     <Navbar />
