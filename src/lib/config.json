@@ -1,0 +1,46 @@
+{
+    "header": [{ "item": "About" }, { "item": "Projects" }, { "item": "Contact" }],
+    "socials": [
+        {
+            "icon": "fa-brands fa-github",
+            "link": "https://github.com/JobGamesJG"
+        },
+        {
+            "icon": "fa-brands fa-instagram",
+            "link": "https://www.instagram.com/jobklarenbeek/"
+        },
+        {
+            "icon": "fa-brands fa-tiktok",
+            "link": "https://www.tiktok.com/@jobgamesjg"
+        },
+        {
+            "icon": "fa-solid fa-code-fork",
+            "link": "https://github.com/JobGamesJG/PersonalWebsite"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Jobk",
+            "subTitle": "This beautifully designed website made by me, made with NextJS, html & scss",
+            "image": "https://cdn.jobgamesjg.xyz/files/t5OkGIlnnN.jpg",
+            "buttons": [
+                { "icon": "fa-brands fa-github", "link": "https://github.com/JobGamesJG/website" }
+            ]
+        },
+        {
+            "title": "MetroMatters",
+            "subTitle": "This website was made for a school project. Don't take it to seriously. #FAKENEWS, made with NextJS, html & scss",
+            "image": "https://cdn.jobgamesjg.xyz/files/jWhEVvAJ6A.png",
+            "buttons": [
+                {
+                    "icon": "fa-brands fa-github",
+                    "link": "https://github.com/JobGamesJG/MetroMatters"
+                },
+                {
+                    "icon": "fa-solid fa-arrow-up-right-from-square",
+                    "link": "https://news.jobgamesjg.xyz/"
+                }
+            ]
+        }
+    ]
+}

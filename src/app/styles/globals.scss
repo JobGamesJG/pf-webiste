@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-style: normal;
+
+    scroll-behavior: smooth !important;
+    margin: 0;
+
+    transition: background-color 0.2s;
+}
+
+p,
+h1,
+h2,
+h3 {
+    transition: color 0.2s;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+
+    color: var(--primary);
+    background: var(--background);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &.dark {
+        --background: #09090b;
+        --onbackground: #1d1d24;
+        --accent: #689af8;
+        --primary: #f6f6f6;
+        --secondary: #252527;
+        --tertiary: #b4b4b4;
+
+        --onDarkPrimary: #f6f6f6;
+        --onDarktertiary: #b4b4b4;
+    }
+
+    &.light {
+        --background: #f5f5f7;
+        --onbackground: #ffffff;
+        --accent: #3b80ff;
+        --primary: #111111;
+        --secondary: #f2f2f3;
+        --tertiary: #61656b;
+
+        --onDarkPrimary: #f6f6f6;
+        --onDarktertiary: #b4b4b4;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--accent);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 auto;
+    gap: 10px;
+
+    h2 {
+        color: var(--accent);
+        font-size: 1rem;
+
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+
+        line-height: 0rem;
+        padding-top: 1rem;
+
+        font-family: "Montserrat", sans-serif;
+    }
+
+    h1 {
+        line-height: 2.7rem;
+        font-size: 2.4rem;
+        text-transform: unset;
+    }
+
+    > div {
+        display: flex;
+        gap: 10px;
+        font-size: 25px;
+
+        a {
+            cursor: pointer;
+            transition: 0.2s all ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            transform: scale(1.2);
+        }
+    }
+}
+
+@import "./navbar.scss";
+
+@import "./pageItems/landing.scss";
+@import "./pageItems/about.scss";
+@import "./pageItems/projects.scss";
+@import "./pageItems/contact.scss";
