@@ -1,5 +1,5 @@
 let darkMode = localStorage.getItem("darkMode");
-const darkModeToggle = document.querySelector("#dark-mode-toggle");
+const darkModeToggle = document.getElementById("dark-mode-toggle");
 const transferData = document.querySelectorAll("#dark-mode-data");
 
 const enableDarkMode = () => {
@@ -26,17 +26,17 @@ const disableDarkMode = () => {
     }
 };
 
-darkModeToggle.addEventListener("mousedown", () => {
-    darkMode = localStorage.getItem("darkMode");
+// darkModeToggle.addEventListener("mousedown", () => {
+//     darkMode = localStorage.getItem("darkMode");
 
-    if (darkMode != "enabled") {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
-});
+//     if (darkMode != "enabled") {
+//         enableDarkMode();
+//     } else {
+//         disableDarkMode();
+//     }
+// });
 
-darkModeToggle.addEventListener("touchstart", () => {
+darkModeToggle.addEventListener("pointerdown", () => {
     darkMode = localStorage.getItem("darkMode");
 
     if (darkMode != "enabled") {

@@ -48,11 +48,15 @@ sections.forEach((section) => {
 });
 
 navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("pointerdown", () => {
         clicked = link.getAttribute("section-data");
     });
 });
 
 window.addEventListener("mousewheel", () => {
+    clicked = "";
+});
+
+window.addEventListener("touchmove", () => {
     clicked = "";
 });
