@@ -25,6 +25,15 @@ export default function RootLayout({
             <Script src="https://kit.fontawesome.com/f86b390e31.js" crossOrigin="anonymous" />
 
             <html lang="en">
+                <head>
+                    <meta name="keywords" content="Jobk, Job Klarenbeek, Job, Klarenbeek" />
+                    <title>Job Klarenbeek - JobK</title>
+                    <meta
+                        name="description"
+                        content="Beautifully designed website made by JobK, made with NextJS, html & scss"
+                    />
+                    <meta name="author" content="JobK" />
+                </head>
                 <body className={inter.className + " dark"}>
                     <Navbar />
                     {children}

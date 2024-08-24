@@ -3,6 +3,7 @@
 import config from "@/lib/config.json";
 import { useState } from "react";
 import Image from "next/image";
+import Script from "next/script";
 
 export const Navbar = () => {
     const [active, setActive] = useState("");

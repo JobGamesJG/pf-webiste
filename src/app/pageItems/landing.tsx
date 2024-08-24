@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Landing = () => {
     return (
-        <section className="landing-container">
+        <main className="landing-container">
             <div>
                 <div></div>
                 <div className="landing-text">
@@ -11,6 +11,6 @@ export const Landing = () => {
                     <h2>Student / Amateur devoloper</h2>
                 </div>
             </div>
-        </section>
+        </main>
     );
 };

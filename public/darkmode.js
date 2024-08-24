@@ -26,17 +26,17 @@ const disableDarkMode = () => {
     }
 };
 
-// darkModeToggle.addEventListener("mousedown", () => {
-//     darkMode = localStorage.getItem("darkMode");
+darkModeToggle.addEventListener("mousedown", () => {
+    darkMode = localStorage.getItem("darkMode");
 
-//     if (darkMode != "enabled") {
-//         enableDarkMode();
-//     } else {
-//         disableDarkMode();
-//     }
-// });
+    if (darkMode != "enabled") {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+});
 
-darkModeToggle.addEventListener("pointerdown", () => {
+darkModeToggle.addEventListener("touchstart", () => {
     darkMode = localStorage.getItem("darkMode");
 
     if (darkMode != "enabled") {

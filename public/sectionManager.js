@@ -51,6 +51,10 @@ navLinks.forEach((link) => {
     link.addEventListener("pointerdown", () => {
         clicked = link.getAttribute("section-data");
     });
+
+    link.addEventListener("touchstart", () => {
+        clicked = link.getAttribute("section-data");
+    });
 });
 
 window.addEventListener("mousewheel", () => {
