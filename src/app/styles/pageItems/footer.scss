@@ -1,0 +1,38 @@
+.footer-container {
+    background: var(--background);
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+
+    > div {
+        width: 100%;
+        max-width: 75rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: auto;
+    }
+}
+
+.footer-socials {
+    display: flex;
+    gap: 0.5rem;
+    i,
+    a {
+        color: var(--primary);
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--accent);
+        }
+    }
+
+    a {
+        transition: color 0.2s ease;
+        cursor: pointer;
+    }
+}

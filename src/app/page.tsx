@@ -1,4 +1,4 @@
-import { Landing, About, Projects, Contact } from "./pageItems/";
+import { Landing, About, Projects, Contact, Footer } from "./pageItems/";
 
 export default function Home() {
     return (
@@ -7,6 +7,7 @@ export default function Home() {
             <About />
             <Projects />
             <Contact />
+            <Footer />
         </main>
     );
 }
