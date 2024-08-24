@@ -9,6 +9,9 @@
     > div {
         width: 100%;
         max-width: 75rem;
+
+        padding: 0.4rem 1rem;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -21,6 +24,7 @@
 .footer-socials {
     display: flex;
     gap: 0.5rem;
+
     i,
     a {
         color: var(--primary);

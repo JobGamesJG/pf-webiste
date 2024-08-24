@@ -36,6 +36,16 @@ darkModeToggle.addEventListener("mousedown", () => {
     }
 });
 
+darkModeToggle.addEventListener("touchstart", () => {
+    darkMode = localStorage.getItem("darkMode");
+
+    if (darkMode != "enabled") {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+});
+
 if (localStorage.getItem("darkMode") == "enabled") {
     enableDarkMode();
 } else {

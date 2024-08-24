@@ -46,6 +46,9 @@
         position: absolute;
         cursor: pointer;
 
+        width: auto;
+        height: auto;
+
         i {
             opacity: 0;
             display: none;
@@ -106,6 +109,52 @@
             height: 2px;
             width: 0;
             padding: 0;
+        }
+    }
+}
+
+.navbar-mobile {
+    display: none;
+    flex-direction: column;
+
+    width: 100%;
+    height: inherit;
+
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    img {
+        transition: all 0.2s ease;
+        cursor: pointer;
+        width: 3rem;
+        height: 1rem;
+
+        &.dark {
+            filter: invert(1);
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+
+    .navbar-routes {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .navbar-darkModeToggle {
+        width: 0.5rem;
+
+        a:hover {
+            color: var(--primary);
         }
     }
 }

@@ -5,7 +5,7 @@
     align-items: center;
 
     width: 100%;
-    height: 70vh;
+    height: auto;
 
     border-radius: 2rem 2rem 0 0;
 
@@ -17,7 +17,7 @@
 
         height: 100%;
 
-        padding: 1rem 0 10rem 0;
+        padding: 1rem 5rem 5rem 5rem;
 
         > a {
             background: var(--tertiary);
@@ -69,6 +69,21 @@
 
         &:hover {
             color: var(--accent);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-container {
+        > div > div {
+            display: flex;
+            flex-direction: column;
+
+            > div {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
         }
     }
 }
